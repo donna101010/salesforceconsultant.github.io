@@ -27,13 +27,14 @@
         }
         header img {
             height: 50px;
-            margin-left: 20px;
+            margin-right: 20px;
         }
         header h1 {
             margin: 0;
-            margin-right: 20px;
+            margin-left: 20px;
             font-size: 2em;
-            text-align: right;
+            text-align: left;
+            flex-grow: 1;
         }
         .content {
             display: flex;
@@ -85,8 +86,8 @@
 </head>
 <body>
     <header>
-        <img src='Salesforce-logo.jpg' alt='Salesforce Logo'>
         <h1>Salesforce Consultant</h1>
+        <img src='Salesforce-logo.jpg' alt='Salesforce Logo'>
     </header>
     <div class="content">
         <img src='close-up-people-working-office.jpg' alt='Your Picture'>
@@ -124,7 +125,9 @@
             <p>From</p>
             <p><strong>£650</strong></p>
             <p>Great value, no-nonsense Salesforce Consulting. Simple as that!</p>
-            </div>
+            <p><em>All prices subject to VAT</em></p>
+        </div>
     </div>
 </body>
 </html>
+
