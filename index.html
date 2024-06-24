@@ -38,15 +38,15 @@
         }
         .content {
             display: flex;
+            flex-direction: column;
             width: 100%;
             box-sizing: border-box;
         }
         .content img {
-            width: 50%;
+            width: 100%;
             height: auto;
         }
         .text-content {
-            width: 50%;
             padding: 20px;
             box-sizing: border-box;
             color: #004c75; /* Darker Salesforce brand color */
@@ -68,7 +68,7 @@
             margin: 20px 0;
         }
         .rate-box {
-            width: 45%;
+            width: 100%;
             margin: 10px;
             padding: 20px;
             border: 1px solid #004c75;
@@ -81,6 +81,22 @@
         }
         .rate-box p {
             margin: 10px 0;
+        }
+
+        /* Responsive design for tablets and larger screens */
+        @media (min-width: 768px) {
+            .content {
+                flex-direction: row;
+            }
+            .content img {
+                width: 50%;
+            }
+            .text-content {
+                width: 50%;
+            }
+            .rate-box {
+                width: 45%;
+            }
         }
     </style>
 </head>
@@ -116,7 +132,7 @@
             <h2>Quick Start</h2>
             <p>From</p>
             <p><strong>£1,100</strong></p>
-            <p>Configuration of Salesforce Sales Cloud for a single simple sales process to include: Leads, Accounts, Contacts, Opportunities, Products, 6 Reports, 1 Dashboard, home page and standard connection to Google Mail or Outlook (office 365) using Salesforce for Outlook or Salesforce Inbox</p>
+            <p>Configuration of Salesforce Sales Cloud for a single simple sales process to include. Leads, Accounts, Contacts, Opportunities, Products, 6 Reports, 1 Dashboard, home page and standard connection to Google Mail or Outlook (office 365) using Salesforce for Outlook or Salesforce Inbox</p>
             <p>Plus 7 Days Support</p>
             <p><em>*Also available for Salesforce Service Cloud</em></p>
         </div>
@@ -129,4 +145,3 @@
     </div>
 </body>
 </html>
-
